@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b2ca1662-2de9-4680-b405-8458b5d5248d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{15ac0bcd-dbaf-4f2e-9f84-0b454b758999}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App_CSP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="enc_KEP_u.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enc_COM_u.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enc_VER_u.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enc_KEP_u.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enc_COM_u.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enc_VER_u.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\enc_KEP\enc_KEP.edl">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\enc_COM\enc_COM.edl">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\enc_VER\enc_VER.edl">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

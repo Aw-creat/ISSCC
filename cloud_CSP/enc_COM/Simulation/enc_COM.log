@@ -1,0 +1,20 @@
+﻿  Generate enclave test key
+  Creating proxy/bridge routines
+  enc_COM.cpp
+  enc_COM_t.c
+    正在创建库 E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_COM.lib 和对象 E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_COM.exp
+  enc_COM.vcxproj -> E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_COM.dll
+  sign the enclave
+  The required memory is 0x362000.
+  Succeed.
+  <EnclaveConfiguration>
+      <ProdID>0</ProdID>
+      <ISVSVN>0</ISVSVN>
+      <StackMaxSize>0x40000</StackMaxSize>
+      <HeapMaxSize>0x300000</HeapMaxSize>
+      <TCSNum>1</TCSNum>
+      <TCSPolicy>1</TCSPolicy>
+      <DisableDebug>0</DisableDebug>
+      <MiscSelect>0</MiscSelect>
+      <MiscMask>0xFFFFFFFF</MiscMask>
+  </EnclaveConfiguration>

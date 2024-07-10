@@ -1,0 +1,11 @@
+1969
+imp
+host
+sri
+link
+1970
+sdc
+11
+port
+ncp
+60

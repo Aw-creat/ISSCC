@@ -1,0 +1,31 @@
+enclave {
+    from "sgx_tstdc.edl" import *;
+
+    trusted {
+        /* define ECALLs here. */
+		public void foo_tw([out,size=len] char* buf,size_t len);
+        public void ecall_sum_array([user_check] double* arr, size_t len, [out] double* result);
+		public void ecall_diff_array([user_check] double* arr, size_t len, [out] double* result);
+		public void ecall_mean_array([user_check] double* arr, size_t len, [out] double* result);
+		public void ecall_var_array([user_check] double* arr, size_t len, [out] double* result);
+		public void ecall_sort_array([user_check] double* arr, size_t len);
+		public void ecall_find_max([in, size=len] double* arr, size_t len, [out] double* max_val);
+		public void ecall_find_min([in, size=len] double* arr, size_t len, [out] double* min_val);
+		public void ecall_search_value([in, size=len] double* arr, size_t len, double value, [out] double* found);
+		public void ecall_linear_regression([in, size=x_len] double* x_values, [in, size=y_len] double* y_values, size_t x_len, size_t y_len, [out] double* slope, [out] double* intercept);
+		public void ecall_linear_regression_one([in, size=x_len] double* x_values, [in, size=y_len] double* y_values, size_t x_len, size_t y_len, [out] double* slope, [out] double* intercept);
+		public void ecall_logistic_regression([user_check] double* features, 
+                                              [user_check] double* labels, 
+                                              size_t n_samples, 
+                                              size_t n_features, 
+                                              [user_check] double* weights,
+                                              [user_check] double* bias);
+	    public void ecall_stats_analysis([user_check] double* data_marray, size_t mcount, [user_check] double* data_farray, size_t fcount);
+
+    };
+
+    untrusted {
+        /* define OCALLs here. */
+	   //public void ocall_print_stats([in, string]const char* msg, double val);
+    };
+};

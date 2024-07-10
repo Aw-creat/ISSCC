@@ -1,0 +1,22 @@
+﻿  Generate enclave test key
+  Creating proxy/bridge routines
+  enc_KEP.cpp
+e:\scis\scis_eight\cloud_csp\enc_kep\enc_kep.cpp(178): warning C4018: “<”: 有符号/无符号不匹配
+e:\scis\scis_eight\cloud_csp\enc_kep\enc_kep.cpp(262): warning C4101: “rsa_key”: 未引用的局部变量
+  enc_KEP_t.c
+    正在创建库 E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_KEP.lib 和对象 E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_KEP.exp
+  enc_KEP.vcxproj -> E:\SCIS\SCIS_eight\cloud_CSP\Simulation\enc_KEP.dll
+  sign the enclave
+  The required memory is 0x410000.
+  Succeed.
+  <EnclaveConfiguration>
+      <ProdID>0</ProdID>
+      <ISVSVN>0</ISVSVN>
+      <StackMaxSize>0x40000</StackMaxSize>
+      <HeapMaxSize>0x300000</HeapMaxSize>
+      <TCSNum>1</TCSNum>
+      <TCSPolicy>1</TCSPolicy>
+      <DisableDebug>0</DisableDebug>
+      <MiscSelect>0</MiscSelect>
+      <MiscMask>0xFFFFFFFF</MiscMask>
+  </EnclaveConfiguration>
